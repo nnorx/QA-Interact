@@ -1,38 +1,130 @@
+@font-face {
+  font-family: 'AzoSans';
+  src: local('AzoSans'), url(./fonts/AzoSans-Regular.woff) format('woff');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+  }
+@font-face {
+  font-family: 'AzoSansMedium';
+  src: local('AzoSansMedium'), url(./fonts/AzoSans-Medium.woff) format('woff');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+@font-face {
+  font-family: 'AzoSansLight';
+  src: local('AzoSansLight'), url(./fonts/AzoSans-Light.woff) format('woff');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+.container {
+  background-image: url('./components/pages/bg.png');
+  background-size: cover;
+  background-position: top center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+div.logo {
+  max-width: 20%;
+  position:relative;
+  margin:0 auto;
+  clear:left;
+  height:auto;
+  z-index: 0;
+  text-align:center;
+}
+
+img {
+  padding: 5px;
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
+}
+
+.main {
+  
+  color: whitesmoke;
+  text-align: center;
+  margin-top: 7%;
+  margin-bottom: 0%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+
+h1 {
+  font-family: 'AzoSans';
+}
+
+h3 {
+  font-family: 'AzoSansLight';
+}
+
+
+
+
+@media only screen and (max-width: 420px) {
+
+  div.logo {
+    max-width: 25%;
+    position:relative;
+    margin:0 auto;
+    clear:left;
+    height:auto;
+    z-index: 0;
+    text-align:center;
+  }
+
+  .main {
+  
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 0%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+
+}
+
+@media only screen and (min-width: 540px) {
+
+  div.logo {
+    max-width: 15%;
+    position:relative;
+    margin:0 auto;
+    clear:left;
+    height:auto;
+    z-index: 0;
+    text-align:center;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
+@media only screen and (min-width: 740px) {
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  div.logo {
+    max-width: 12%;
+    position:relative;
+    margin:0 auto;
+    clear:left;
+    height:auto;
+    z-index: 0;
+    text-align:center;
   }
 }
