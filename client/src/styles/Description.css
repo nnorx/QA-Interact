@@ -1,0 +1,18 @@
+.description {
+    overflow: hidden;
+    grid-area: description;
+    display: grid;
+    font-size: 16.5px;
+    font-weight: 500;
+    max-width: 700px;
+    grid-template-columns: 1fr;
+    padding-top: 5px;
+  }
+  
+  .description-text {
+    font-family: 'AzoSans';
+    color: var(--white);
+    text-align: center;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+  }

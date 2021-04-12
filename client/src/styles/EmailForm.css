@@ -1,0 +1,67 @@
+.emailForm {
+    grid-area: form;
+    display: grid;
+    grid-gap: 10px;
+    padding-top: 2px;
+    grid-template-columns: [input] 4fr [button] 1fr;
+
+}
+
+.email-field {
+    grid-area: input;
+    border-radius: 120px;
+    height: 40px;
+    background-color: var(--white);
+    border: 2px solid var(--lightorange);
+    color: var(--darkorange);
+    padding-left: 15px;
+    outline: none;
+    font-size: 16px;
+    font-family: 'AzoSans';
+    transition: all 0.2s ease-in;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.15);
+}
+
+.email-field::placeholder {
+    color: var(--darkorange);
+    font-size: 16px;
+}
+
+.email-field:focus,
+:hover {
+    border-color: var(--lightorange);
+}
+
+.email-button {
+    grid-area: button;
+    height: 40px;
+    background-color: var(--darkorange);
+    color: var(--white);
+    border: 2px solid var(--darkorange);
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'AzoSans';
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.15);
+    
+}
+
+.email-button:hover {
+    filter: brightness(85%);
+}
+
+@media(max-width: 700px) {
+    .emailForm {
+        grid-template-areas:
+        "input"
+        "button"
+    }
+    .email-field,
+    .email-button {
+        width: 270px;
+        grid-column: 1 / -1;
+    }
+}

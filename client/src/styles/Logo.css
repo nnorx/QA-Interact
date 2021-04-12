@@ -1,0 +1,13 @@
+.logo-container {
+    grid-area: logo;
+    text-align: center;
+}
+
+
+.logo {
+    padding-top: 0.2vh;
+    height: 4vh;
+    max-height: 15%;
+    min-height: 20px;
+    pointer-events: none;
+}

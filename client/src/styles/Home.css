@@ -1,0 +1,21 @@
+
+
+.background {
+
+
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 16vh 10vh auto 32vh;
+    grid-template-areas: 
+    "logo"
+    "title"
+    "description"
+    "form"
+    "phone";
+    justify-items: center;
+    align-items: center;
+    color: var(--white);
+
+}
+

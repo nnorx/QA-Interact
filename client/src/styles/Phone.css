@@ -1,0 +1,12 @@
+.phone-container {
+    grid-area: phone;
+    text-align: center;
+}
+
+
+.phone {
+    padding-top: 2.5vh;
+    height: 30vh;
+    min-height: 100px;
+    pointer-events: none;
+}

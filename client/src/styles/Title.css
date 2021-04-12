@@ -1,0 +1,38 @@
+  
+.title {
+    padding-top: 27px;
+    font-family: 'AzoSans';
+    color: var(--white);
+    text-align: center;
+    grid-area: title;
+    display: grid;
+    grid-gap: 20px;
+    width: 100%;
+    max-width: 800px;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+   
+  }
+  
+
+.title:before,
+.title:after {
+  display: block;
+  content: "";
+  height: 10px;
+}
+
+.title:before {
+  background: linear-gradient(to left, var(--green), transparent);
+}
+
+.title:after {
+  background: linear-gradient(to right, var(--green), transparent);
+}
+
+
+@media(max-width: 727px) {
+  .title {
+    white-space: pre-wrap;
+  }
+}

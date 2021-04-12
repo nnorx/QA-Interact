@@ -1,0 +1,47 @@
+
+.notification {
+  border-radius: 25px;
+  display: grid;
+  grid-gap: 10px;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  grid-template-columns: 1fr 5fr;
+  border: 3px solid var(--white);
+  position: relative;
+  transition: 0.45s;
+  transform: translateY(105%);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+}
+  
+.notification.visible {
+  transform: translateY(0);
+}
+
+.notification.success {
+  background-color: var(--cyan);
+}
+
+.notification.warning {
+  background-color: var(--lightorange);
+}
+
+.notification.danger {
+  background-color: var(--red);
+}
+
+.notification img {
+  justify-self: center;
+  align-self: center;
+  width: 40px;
+}
+
+.notification p {
+  color: var(--black);
+  font-weight: 500;
+  align-self: center;
+  padding-right: 10px;
+}
+
+.notification:hover {
+  border-color: var(--white);
+}
